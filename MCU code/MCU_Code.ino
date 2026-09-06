@@ -1,6 +1,4 @@
 #include <Servo.h>
-
-// --- Pin Definitions (STM32 Core Syntax) ---
 #define PIN_TEMP_AO      PA_0   // NTC Thermistor Module Analog Out
 #define PIN_LDR_AO       PA_1   // LDR Sensor Module Analog Out
 #define PIN_GAS_AO       PA_2   // MQ-5 Gas Sensor Module Analog Out
@@ -19,31 +17,26 @@
 #define PIN_RGB_G        PB_5   // HW-479 RGB Module Green Pin
 #define PIN_RGB_B        PB_6   // HW-479 RGB Module Blue Pin
 
-// --- Operational Calibration Thresholds ---
 #define ADC_RESOLUTION     4095.0f  // 12-bit ADC Resolution on STM32
 #define LDR_DARK_THRESHOLD 2500     // ADC value above which room is dark
 #define GAS_ALARM_LIMIT    1800     // ADC threshold for MQ-5 Gas/Smoke detection
 
-// --- PIR Motion Sliding Window Variables ---
 #define MAX_MOTION_EVENTS 10
 unsigned long motionTimestamps[MAX_MOTION_EVENTS];
 int motionIndex = 0;
 bool previousPirState = LOW;
 bool isBabyAwake = false;
 
-// --- System State Flags ---
 bool isCryDetected = false;
 bool isServoRocking = false;
 bool isBuzzerActive = false;
 
-// --- Non-blocking Servo Variables ---
 Servo cribServo;
 int currentServoAngle = 90;
 int servoDirection = 1;
 unsigned long lastServoMoveTime = 0;
-const int SERVO_SWEEP_INTERVAL = 15; // Delay between 1-degree steps (ms)
+const int SERVO_SWEEP_INTERVAL = 15;
 
-// --- Function Prototypes ---
 void readSerialCommands();
 void processMotionDetection();
 void processRoomLighting();
