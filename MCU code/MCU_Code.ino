@@ -1,7 +1,7 @@
 #include <Servo.h>
 
 #define PIN_TEMP_AO      PA_0   // NTC Thermistor Module Analog Out
-#define PIN_LDR_AO       PA_1   // LDR Sensor Module Analog Out
+#define PIN_LDR_DO       PA_1   // LDR Sensor Module Digital Out
 #define PIN_GAS_AO       PA_2   // MQ-5 Gas Sensor Module Analog Out
 #define PIN_PIR_OUT      PA_3   // HC-SR501 Motion Output
 
@@ -19,7 +19,6 @@
 #define PIN_RGB_B        PB_6   // HW-479 RGB Module Blue Pin
 
 #define ADC_RESOLUTION     4095.0f  // 12-bit ADC Resolution on STM32
-#define LDR_DARK_THRESHOLD 2500     // ADC value above which room is dark
 #define GAS_ALARM_LIMIT    1800     // ADC threshold for MQ-5 Gas/Smoke detection
 
 #define MAX_MOTION_EVENTS 10
@@ -52,6 +51,7 @@ void setup() {
 
   analogReadResolution(12);
 
+  pinMode(PIN_LDR_DO, INPUT); // Set LDR as digital input
   pinMode(PIN_PIR_OUT, INPUT);
   pinMode(PIN_ROOM_LED, OUTPUT);
   pinMode(PIN_BUZZER, OUTPUT);
@@ -139,8 +139,8 @@ void processMotionDetection() {
 }
 
 void processRoomLighting() {
-  int ldrValue = analogRead(PIN_LDR_AO);
-  bool isDark = (ldrValue > LDR_DARK_THRESHOLD);
+  // Read digital state from LDR module
+  bool isDark = (digitalRead(PIN_LDR_DO) == HIGH);
 
   if (isDark && (isBabyAwake || isCryDetected)) {
     digitalWrite(PIN_ROOM_LED, HIGH);
