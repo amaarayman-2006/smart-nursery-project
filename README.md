@@ -1,4 +1,4 @@
-# Smart Nursery Guardian 🏠👶
+# Smart Nursery Guardian
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -79,12 +79,7 @@ smart-nursery-project/
 ├── PCB/                               # Hardware Design
 │   ├── schematic.pdf                 # Circuit schematic
 │   ├── pcb_layout.pdf                # PCB layout design
-│   └── BOM.txt                       # Bill of materials
-│
-└── docs/                              # Additional Documentation
-    ├── SETUP.md                      # Installation & setup guide
-    ├── API.md                        # Serial protocol documentation
-    └── TROUBLESHOOTING.md            # Common issues & solutions
+│   └── BOM.txt                       # Bill of materials 
 ```
 
 ## 🛠 Technology Stack
@@ -395,34 +390,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - **Mind Cloud Training Phase** - Project sponsorship and guidance
 - **Open Source Community** - For excellent libraries (librosa, scikit-learn, etc.)
-- **Contributors** - All team members and collaborators
+- **Contributors** - All team members and collaborators ( Team 3 )
 - **Dataset Providers** - Baby cry audio dataset sources
 
-## 📞 Support & Contact
-
-For issues, questions, or suggestions:
-
-- **Open an Issue**: [GitHub Issues](https://github.com/amaarayman-2006/smart-nursery-project/issues)
-- **Start a Discussion**: [GitHub Discussions](https://github.com/amaarayman-2006/smart-nursery-project/discussions)
-- **Email**: For urgent matters, contact via GitHub profile
-
-## 🗺️ Roadmap
-
-### Planned Features (v2.0)
-- [ ] Mobile app for remote monitoring
-- [ ] Cloud integration (AWS/Azure)
-- [ ] Advanced ML models (Deep Learning)
-- [ ] Multi-room support
-- [ ] Predictive analytics
-- [ ] Voice commands
-- [ ] Integration with smart home systems
-
-### Upcoming Improvements
-- Enhanced GUI with more visualizations
-- Better energy efficiency
-- Extended sensor support
-- Mobile-responsive design
-- API for third-party integrations
 
 ## 📊 Project Statistics
 
@@ -433,9 +403,4 @@ For issues, questions, or suggestions:
 - **Documentation**: Comprehensive PDF guide
 - **License**: MIT
 
----
-
-**Last Updated**: September 2026
-
-For the latest updates and detailed information, please refer to the official **Smart Nursery Guardian.pdf** documentation in the repository.
 
