@@ -51,6 +51,7 @@ The system monitors critical environmental and behavioral parameters, processes 
 smart-nursery-project/
 ├── README.md                                   # Project documentation
 ├── LICENSE                                     # MIT License
+├── Smart Nursery Guardian Project Raport.pdf   # Project Documentation and Report
 │
 ├── GUI/                                        # User Interface & Application
 │   ├── SNG.py                                 # Main GUI application (Tkinter)
