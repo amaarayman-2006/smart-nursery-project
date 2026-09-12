@@ -1,5 +1,4 @@
 # Bill of Materials (BOM)
-### Smart Crib / Baby Monitor Automation System — STM32F401RCT6 (Black Pill)
 
 ---
 
