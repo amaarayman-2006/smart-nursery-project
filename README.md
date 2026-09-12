@@ -98,7 +98,9 @@ smart-nursery-project/
 │   ├── Sheet3.SchDoc                          # Schematic diagram 2
 │   ├── PCB1.PcbDoc                            # PCB layout design
 │   ├── Schlib3.SchLib                         # Schematic library
-│   ├── PcbLib3.PcbLib                         # PCB library
+│   ├── PCB 3D.png                             # 3D Screenshot of The Board
+│   ├── PCB Layers 1,2,3.png                   # Screenshot of Layers 1, 2 and 3 of the .pcbdoc
+│   ├── PCB Layers 1,2,4.png                   # Screenshot of Layers 1, 2 and 4 of the .pcbdoc
 │   └── PCB Schematics.pdf                     # PDF schematics
 │
 └── Telegram Bot/                               # Telegram Bot Integration
