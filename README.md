@@ -6,46 +6,46 @@
 [![Language Composition](https://img.shields.io/badge/Jupyter%20Notebook-37.7%25-orange.svg)](#technology-stack)
 [![Language Composition](https://img.shields.io/badge/C%2B%2B-18.3%25-red.svg)](#technology-stack)
 
-## 📋 Overview
+## Overview
 
 **Smart Nursery Guardian** is an intelligent IoT-based nursery monitoring and automation system designed to provide comprehensive care and safety for infants. This system combines machine learning and real-time sensor data processing to create an intelligent environment for optimal baby care.
 
 The system monitors critical environmental and behavioral parameters, processes audio signals using AI, and automatically adjusts the nursery environment to ensure optimal conditions for the baby's health and safety.
 
-## ✨ Key Features
+## Key Features
 
-### 🎯 Real-Time Monitoring
+### Real-Time Monitoring
 - **Temperature Control** - Precise monitoring and regulation of nursery temperature
 - **Motion Detection** - Advanced motion sensing to detect baby movement and activities
 - **Air Quality** - Gas level monitoring for safe air composition
 - **Lighting Control** - Automatic light adjustment based on ambient conditions
 - **Sound Analysis** - AI-powered audio processing to detect baby cries and classify baby states
 
-### 🤖 Intelligent Analysis
+### Intelligent Analysis
 - **Baby State Classification** - Machine learning models to classify baby states (sleeping, crying, hungry, etc.)
 - **Cry Detection** - Automated detection and classification of different baby cry types
 - **Audio Feature Extraction** - Advanced MFCC and spectral analysis for accurate sound classification
 - **Real-Time Prediction** - Instantaneous processing and prediction of audio inputs
 
-### 🎮 User Interface
+### User Interface
 - **Interactive Dashboard** - Comprehensive GUI displaying all system parameters in real-time
 - **Status Monitoring** - Live visual feedback for all sensors and actuators
 - **System Connection Status** - Real-time indication of hardware connectivity
 - **Video Streaming** - Integrated video monitoring capability for visual supervision
 
-### 🔧 Automated Control
+### Automated Control
 - **Fan Speed Adjustment** - Automatic fan regulation based on temperature
 - **Servo Control** - Mechanical actuation for environmental adjustments
 - **Temperature Regulation** - Responsive heating/cooling system
 - **Multi-Parameter Synchronization** - Coordinated control of all actuators
 
-### 📡 Hardware Integration
+### Hardware Integration
 - **MCU Communication** - Seamless STM32 microcontroller integration
 - **Serial Communication** - Real-time data exchange via serial protocol (115200 baud)
 - **Sensor Integration** - Direct connection to temperature, motion, and gas sensors
 - **Actuator Control** - PWM-based fan and servo control
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 smart-nursery-project/
@@ -104,7 +104,7 @@ smart-nursery-project/
     └── tele.py                                # Telegram bot implementation
 ```
 
-## 🛠 Technology Stack
+## Technology Stack
 
 ### **Languages & Frameworks**
 - **Python (44%)** - Core application logic and ML integration
@@ -130,7 +130,7 @@ smart-nursery-project/
 - **STM32 HAL** - Microcontroller abstraction layer
 - **UART Communication** - Serial protocol at 115200 baud
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -195,7 +195,7 @@ python Features2.py
 # Test with sample audio files
 ```
 
-## 📊 How It Works
+## How It Works
 
 ### System Architecture
 
@@ -251,7 +251,7 @@ python Features2.py
 | Fan Speed | Off/Low/Medium/High | Control Signal | PWM |
 | Servo Position | Stopped/Moving | Control Signal | Servo Driver |
 
-## 📝 Model Details
+## Model Details
 
 ### Machine Learning Model
 
@@ -275,7 +275,7 @@ python Features2.py
 - **Duration**: Audio sample length (1 feature)
 - **Spectral Features**: Additional 4 features
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Monitor Baby State
 ```python
@@ -312,7 +312,7 @@ stm = serial.Serial("COM5", 115200, timeout=1)
 # Change to your serial port (COM3, COM4, /dev/ttyUSB0, etc.)
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Run Unit Tests
 ```bash
@@ -331,7 +331,7 @@ cd "ML Model"
 jupyter notebook "Test Features.ipynb"
 ```
 
-## 🔌 Hardware Integration
+## Hardware Integration
 
 ### Serial Protocol
 - **Baud Rate**: 115200
@@ -352,7 +352,7 @@ jupyter notebook "Test Features.ipynb"
 - **Servo**: PWM signal (Timer output)
 - **LED Indicators**: GPIO outputs
 
-## 📈 Performance
+## Performance
 
 ### Response Times
 - **Audio Processing**: ~500ms (10-second audio sample)
@@ -371,11 +371,8 @@ jupyter notebook "Test Features.ipynb"
 - Write unit tests for new features
 - Update documentation accordingly
 
-## 📋 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Authors
+## Authors
 
 **Team 3 Members :**
 - **Hardware :**
@@ -386,14 +383,14 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
   - Salma Ahmed
   - Paula Suleiman
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Mind Cloud Training Phase** - Project sponsorship and guidance
 - **Open Source Community** - For excellent libraries (librosa, scikit-learn, etc.)
 - **Contributors** - All team members and collaborators
 - **Dataset Providers** - Baby cry audio dataset sources
 
-## 📊 Project Statistics
+## Project Statistics
 
 - **Created**: September 2026
 - **Total Code**: 11,397+ bytes
