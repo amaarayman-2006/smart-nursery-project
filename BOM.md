@@ -1,6 +1,5 @@
 # Bill of Materials (BOM)
 
----
 
 ## 1. Microcontroller
 
