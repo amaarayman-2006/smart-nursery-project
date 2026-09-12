@@ -364,25 +364,6 @@ jupyter notebook "Test Features.ipynb"
 - **Cry Detection**: 94%+ accuracy
 - **Sensor Readings**: Real-time with <1% error
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit changes with descriptive messages:
-   ```bash
-   git commit -m 'Add: New feature description'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a Pull Request with detailed description
-
 ### Code Standards
 - Follow PEP 8 for Python code
 - Include docstrings for all functions
@@ -395,7 +376,14 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👤 Authors
 
-- **Team 3**
+**Team 3 Members :**
+- **Hardware :**
+  - Amaar Ayman
+  - Eyad Nasr
+- **Software :**
+  - Habiba Sadek
+  - Salma Ahmed
+  - Paula Suleiman
 
 ## 🙏 Acknowledgments
 
