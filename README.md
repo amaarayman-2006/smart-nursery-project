@@ -2,15 +2,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Language Composition](https://img.shields.io/badge/Python-43.7%25-blue.svg)](#technology-stack)
-[![Language Composition](https://img.shields.io/badge/Jupyter%20Notebook-37.9%25-orange.svg)](#technology-stack)
-[![Language Composition](https://img.shields.io/badge/C%2B%2B-18.4%25-red.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/Python-44%25-blue.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/Jupyter%20Notebook-37.7%25-orange.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/C%2B%2B-18.3%25-red.svg)](#technology-stack)
 
 ## 📋 Overview
 
-**Smart Nursery Guardian** is an intelligent IoT-based nursery monitoring and automation system designed to provide comprehensive care and safety for infants. This system combines machine learning, real-time monitoring, and automated environmental control to create a smart, responsive nursery environment. The project was developed as part of the Mind Cloud Training Phase.
+**Smart Nursery Guardian** is an intelligent IoT-based nursery monitoring and automation system designed to provide comprehensive care and safety for infants. This system combines machine learning and real-time sensor data processing to create an intelligent environment for optimal baby care.
 
-The system monitors critical environmental and behavioral parameters, processes audio signals using AI, and automatically adjusts the nursery environment to ensure optimal conditions for the baby's health and comfort.
+The system monitors critical environmental and behavioral parameters, processes audio signals using AI, and automatically adjusts the nursery environment to ensure optimal conditions for the baby's health and safety.
 
 ## ✨ Key Features
 
@@ -49,43 +49,66 @@ The system monitors critical environmental and behavioral parameters, processes 
 
 ```
 smart-nursery-project/
-├── README.md                          # Project documentation
-├── LICENSE                            # MIT License
-├── Smart Nursery Guardian.pdf         # Complete project documentation
+├── README.md                                   # Project documentation
+├── LICENSE                                     # MIT License
 │
-├── GUI/                               # User Interface & Application
-│   ├── SNG.py                        # Main GUI application (Tkinter)
-│   ├── CombinedScript.py             # Integration script for ML & sensors
-│   ├── Features2.py                  # Audio feature extraction module
-│   └── processing.py                 # Audio processing utilities
+├── GUI/                                        # User Interface & Application
+│   ├── SNG.py                                 # Main GUI application (Tkinter)
+│   ├── CombinedScript.py                      # Integration script for ML & sensors
+│   ├── Features2.py                           # Audio feature extraction module
+│   ├── processing.py                          # Audio processing utilities
+│   ├── tele.py                                # Telegram bot integration
+│   ├── my_ml_model.joblib                     # Trained ML model
+│   ├── image.png                              # UI assets
+│   ├── temp_live_audio.wav                    # Temporary audio file
+│   └── video.mp4                              # Sample video file
 │
-├── ML Model/                          # Machine Learning Components
-│   ├── SNG.py                        # ML-integrated GUI version
-│   ├── CombinedScript.py             # ML prediction pipeline
-│   ├── Features2.py                  # MFCC & feature extraction
-│   ├── Audio features.ipynb          # Audio analysis & feature engineering
-│   ├── Test Features.ipynb           # Feature validation notebook
-│   ├── my_ml_model.joblib            # Trained ML model (joblib format)
-│   └── data/                         # Training datasets
-│       └── baby_cry_dataset/         # Labeled baby cry audio files
+├── ML Model/                                   # Machine Learning Components
+│   ├── SNG.py                                 # ML-integrated GUI version
+│   ├── CombinedScript.py                      # ML prediction pipeline
+│   ├── Features2.py                           # MFCC & feature extraction
+│   ├── processing.py                          # Audio processing utilities
+│   ├── Audio features.ipynb                   # Audio analysis & feature engineering
+│   ├── Audio Augmentations.ipynb              # Data augmentation notebook
+│   ├── ML model.ipynb                         # Model training notebook
+│   ├── Test Features.ipynb                    # Feature validation notebook
+│   ├── tele.py                                # Telegram bot integration
+│   ├── my_ml_model.joblib                     # Trained ML model (joblib format)
+│   ├── Fullaudio3.csv                         # Training dataset
+│   ├── finalfeatures23.csv                    # Extracted features
+│   ├── finalTest2.csv                         # Test dataset
+│   ├── image.png                              # UI assets
+│   ├── temp_live_audio.wav                    # Temporary audio file
+│   ├── video.mp4                              # Sample video file
+│   ├── __pycache__/                           # Python cache directory
+│   │   ├── CombinedScript.cpython-314.pyc
+│   │   ├── Features2.cpython-314.pyc
+│   │   └── processing.cpython-314.pyc
 │
-├── MCU code/                          # Microcontroller Code (C++)
-│   └── stm32_firmware.cpp            
-│       ├── Sensor reading routines
-│       ├── Serial communication
-│       ├── PWM control for actuators
-│       └── Temperature regulation logic
+├── MCU code/                                   # Microcontroller Code (Arduino/C++)
+│   ├── MCU_Code.ino                           # Main MCU firmware
+│   └── new.ino                                # Alternative MCU implementation
 │
-├── PCB/                               # Hardware Design
-    └── Altium Designer PCB Project Files 
+├── PCB/                                        # Hardware Design (Altium Designer)
+│   ├── Smart Nursery Guardian.PrjPcb          # Altium project file
+│   ├── Smart Nursery Guardian.PrjPcbStructure # Project structure file
+│   ├── Sheet1.SchDoc                          # Schematic diagram 1
+│   ├── Sheet3.SchDoc                          # Schematic diagram 2
+│   ├── PCB1.PcbDoc                            # PCB layout design
+│   ├── Schlib3.SchLib                         # Schematic library
+│   ├── PcbLib3.PcbLib                         # PCB library
+│   └── PCB Schematics.pdf                     # PDF schematics
+│
+└── Telegram Bot/                               # Telegram Bot Integration
+    └── tele.py                                # Telegram bot implementation
 ```
 
 ## 🛠 Technology Stack
 
 ### **Languages & Frameworks**
-- **Python (43.7%)** - Core application logic and ML integration
-- **Jupyter Notebook (37.9%)** - Data analysis and model development
-- **C++ (18.4%)** - STM32 microcontroller firmware
+- **Python (44%)** - Core application logic and ML integration
+- **Jupyter Notebook (37.7%)** - Data analysis and model development
+- **C++ (18.3%)** - STM32 microcontroller firmware
 
 ### **Key Libraries & Tools**
 
@@ -288,16 +311,6 @@ stm = serial.Serial("COM5", 115200, timeout=1)
 # Change to your serial port (COM3, COM4, /dev/ttyUSB0, etc.)
 ```
 
-## 📚 Documentation
-
-Comprehensive documentation is available in **Smart Nursery Guardian.pdf** which includes:
-- Detailed system design and architecture
-- Hardware specifications and pinout
-- Sensor and actuator configurations
-- Complete API documentation
-- Troubleshooting guides
-- Setup instructions
-
 ## 🧪 Testing
 
 ### Run Unit Tests
@@ -391,14 +404,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Contributors** - All team members and collaborators
 - **Dataset Providers** - Baby cry audio dataset sources
 
-
 ## 📊 Project Statistics
 
 - **Created**: September 2026
-- **Total Code**: 10,640+ bytes
+- **Total Code**: 11,397+ bytes
 - **Python Files**: Multiple modules
-- **Jupyter Notebooks**: 2+ analysis notebooks
+- **Jupyter Notebooks**: 4+ analysis notebooks
 - **Documentation**: Comprehensive PDF guide
 - **License**: MIT
-
-
