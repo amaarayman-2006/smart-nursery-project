@@ -42,7 +42,6 @@
 |---|---|---|---|
 | Resistor | 220 Ω | LED (R4) + RGB channels (R5, R6, R7) | 4 |
 | Resistor | 330 Ω | Buzzer (R10) | 1 |
-| Resistor | 500 Ω | Spare / not yet assigned in schematic | 1 |
 | Resistor | 1 kΩ | Voltage divider (R8) | 1 |
 | Resistor | 2 kΩ | Voltage divider (R9) — **note:** not in original supplied resistor list; confirm sourced separately | 1 |
 | Resistor | 10 kΩ | LDR pull (R2), NTC pull (R3), NTC divider pair | 3+ |
