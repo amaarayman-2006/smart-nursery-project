@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Language Composition](https://img.shields.io/badge/Python-44%25-blue.svg)](#technology-stack)
-[![Language Composition](https://img.shields.io/badge/Jupyter%20Notebook-37.7%25-orange.svg)](#technology-stack)
-[![Language Composition](https://img.shields.io/badge/C%2B%2B-18.3%25-red.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/Python-44.6%25-blue.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/Jupyter%20Notebook-37.3%25-orange.svg)](#technology-stack)
+[![Language Composition](https://img.shields.io/badge/C%2B%2B-18.1%25-red.svg)](#technology-stack)
 
 ## Overview
 
@@ -54,7 +54,7 @@ smart-nursery-project/
 ├── LICENSE                                     # MIT License
 ├── Smart Nursery Guardian Project Report.pdf   # Project Documentation and Report
 │
-├── GUI/                                        # User Interface & Application
+├── GUI/                                        # User Interface & Application (Python 44.6%)
 │   ├── SNG.py                                 # Main GUI application (Tkinter)
 │   ├── CombinedScript.py                      # Integration script for ML & sensors
 │   ├── CombinedScript.pyZone.Identifier       # Windows metadata file
@@ -69,7 +69,7 @@ smart-nursery-project/
 │   ├── temp_live_audio.wav                    # Temporary audio file
 │   └── video.mp4                              # Sample video file
 │
-├── ML Model/                                   # Machine Learning Components
+├── ML Model/                                   # Machine Learning Components (Jupyter Notebooks 37.3%)
 │   ├── SNG.py                                 # ML-integrated GUI version
 │   ├── CombinedScript.py                      # ML prediction pipeline
 │   ├── Features2.py                           # MFCC & feature extraction
@@ -88,8 +88,8 @@ smart-nursery-project/
 │   ├── video.mp4                              # Sample video file
 │   └── __pycache__/                           # Python cache directory
 │
-├── MCU code/                                  # Microcontroller Code (Arduino/C++)
-│   └── new.ino                                # Main MCU code implementation
+├── MCU code/                                  # Microcontroller Code (C++ 18.1%)
+│   └── new.ino                                # Main MCU code implementation (STM32)
 │
 ├── PCB/                                        # Hardware Design (Altium Designer)
 │   ├── Smart Nursery Guardian.PrjPcb          # Altium project file
@@ -108,9 +108,9 @@ smart-nursery-project/
 ## Technology Stack
 
 ### **Languages & Frameworks**
-- **Python (44%)** - Core application logic and ML integration
-- **Jupyter Notebook (37.7%)** - Data analysis and model development
-- **C++ (18.3%)** - STM32 microcontroller firmware
+- **Python (44.6%)** - Core application logic and ML integration
+- **Jupyter Notebook (37.3%)** - Data analysis and model development
+- **C++ (18.1%)** - STM32 microcontroller firmware
 
 ### **Key Libraries & Tools**
 
