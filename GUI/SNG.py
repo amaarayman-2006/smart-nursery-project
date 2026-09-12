@@ -104,7 +104,7 @@ class SNG:
         if result != "N":
             self.parameters["classification"].set(result)
             self.parameters["cry"].set("Cry detected")
-            self.parameters["light"].set("ON") 
+            self.parameters["light"].set("OFF") 
             self.parameters["baby_state"].set("Awake")
             stm.write("CRY_DETECTED\n".encode())
             stm.write("SERVO_START\n".encode())
