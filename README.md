@@ -335,6 +335,10 @@ cd "ML Model"
 jupyter notebook "Test Features.ipynb"
 ```
 
+## Bill of Materials 
+
+You can access the Bill of Materials from here [BOM.md](/BOM.md)
+
 ## Hardware Integration
 
 ### Serial Protocol
