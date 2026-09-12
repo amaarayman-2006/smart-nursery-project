@@ -8,9 +8,9 @@
 
 ## Overview
 
-**Smart Nursery Guardian** is an intelligent IoT-based nursery monitoring and automation system designed to provide comprehensive care and safety for infants. This system combines machine learning and real-time sensor data processing to create an intelligent environment for optimal baby care.
+**Smart Nursery Guardian** is an intelligent IoT-based nursery monitoring and automation system designed to provide comprehensive care and safety for infants. This system combines machine learning[...]
 
-The system monitors critical environmental and behavioral parameters, processes audio signals using AI, and automatically adjusts the nursery environment to ensure optimal conditions for the baby's health and safety.
+The system monitors critical environmental and behavioral parameters, processes audio signals using AI, and automatically adjusts the nursery environment to ensure optimal conditions for the baby'[...]
 
 ## Key Features
 
@@ -51,16 +51,20 @@ The system monitors critical environmental and behavioral parameters, processes 
 smart-nursery-project/
 ├── README.md                                   # Project documentation
 ├── LICENSE                                     # MIT License
-├── Smart Nursery Guardian Project Raport.pdf   # Project Documentation and Report
+├── Smart Nursery Guardian Project Report.pdf   # Project Documentation and Report
 │
 ├── GUI/                                        # User Interface & Application
 │   ├── SNG.py                                 # Main GUI application (Tkinter)
 │   ├── CombinedScript.py                      # Integration script for ML & sensors
+│   ├── CombinedScript.pyZone.Identifier       # Windows metadata file
 │   ├── Features2.py                           # Audio feature extraction module
+│   ├── Features2.pyZone.Identifier            # Windows metadata file
 │   ├── processing.py                          # Audio processing utilities
+│   ├── processing.pyZone.Identifier           # Windows metadata file
 │   ├── tele.py                                # Telegram bot integration
 │   ├── my_ml_model.joblib                     # Trained ML model
-│   ├── image.png                              # UI assets
+│   ├── my_ml_model.joblibZone.Identifier      # Windows metadata file
+│   ├── image.jpeg                             # UI assets
 │   ├── temp_live_audio.wav                    # Temporary audio file
 │   └── video.mp4                              # Sample video file
 │
@@ -70,9 +74,9 @@ smart-nursery-project/
 │   ├── Features2.py                           # MFCC & feature extraction
 │   ├── processing.py                          # Audio processing utilities
 │   ├── Audio features.ipynb                   # Audio analysis & feature engineering
-│   ├── Audio Augmentations.ipynb              # Data augmentation notebook
+│   ├── Audio Augementations .ipynb            # Data augmentation notebook
 │   ├── ML model.ipynb                         # Model training notebook
-│   ├── Test Features.ipynb                    # Feature validation notebook
+│   ├── Test Features .ipynb                   # Feature validation notebook
 │   ├── tele.py                                # Telegram bot integration
 │   ├── my_ml_model.joblib                     # Trained ML model (joblib format)
 │   ├── Fullaudio3.csv                         # Training dataset
@@ -81,10 +85,7 @@ smart-nursery-project/
 │   ├── image.png                              # UI assets
 │   ├── temp_live_audio.wav                    # Temporary audio file
 │   ├── video.mp4                              # Sample video file
-│   ├── __pycache__/                           # Python cache directory
-│   │   ├── CombinedScript.cpython-314.pyc
-│   │   ├── Features2.cpython-314.pyc
-│   │   └── processing.cpython-314.pyc
+│   └── __pycache__/                           # Python cache directory
 │
 ├── MCU code/                                   # Microcontroller Code (Arduino/C++)
 │   ├── MCU_Code.ino                           # Main MCU firmware
