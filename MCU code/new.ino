@@ -170,7 +170,7 @@ void processRoomLighting() {
   bool isDark = (digitalRead(PIN_LDR_DO) == HIGH);
 
   // Per .md: LED ON if (Dark) AND (Awake OR Cry Detected)
-  if (isDark && (isBabyAwake || isCryDetected)) {
+  if (!isDark && (isBabyAwake || isCryDetected)) {
     digitalWrite(PIN_ROOM_LED, HIGH);
   } else {
     digitalWrite(PIN_ROOM_LED, LOW);
