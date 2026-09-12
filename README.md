@@ -45,6 +45,10 @@ The system monitors critical environmental and behavioral parameters, processes 
 - **Sensor Integration** - Direct connection to temperature, motion, and gas sensors
 - **Actuator Control** - PWM-based fan and servo control
 
+## Circuit Implementation
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/43875fea-5293-481d-8f36-b756437ea79c" />
+
+
 ## Project Structure
 
 ```
