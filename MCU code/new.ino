@@ -94,11 +94,10 @@ void loop() {
 
 void runDiagnosticTest() {
   Serial.println();
-  Serial.println("=========================================");
   Serial.println("  SMART NURSERY GUARDIAN - SELF TEST");
   Serial.println("=========================================");
-  Serial.println("Testing all connections. Observe each");
-  Serial.println("component as it is triggered...");
+  Serial.println("Testing all connections. Observe each connection");
+  Serial.println("component as it is triggered");
   Serial.println("-----------------------------------------");
 
   int passCount = 0;
@@ -204,7 +203,6 @@ void runDiagnosticTest() {
 
   Serial.println("-----------------------------------------");
   Serial.println("  DIAGNOSTIC SUMMARY");
-  Serial.println("-----------------------------------------");
   Serial.print("  Sensors:   ");
   Serial.print(passCount); Serial.print(" PASS | ");
   Serial.print(warnCount); Serial.print(" WARN | ");
@@ -220,7 +218,6 @@ void runDiagnosticTest() {
     Serial.println("  All sensor checks PASSED.");
   }
 
-  Serial.println("=========================================");
   Serial.println("  Starting main loop in 3 seconds...");
   Serial.println("=========================================");
   delay(3000);
@@ -231,7 +228,6 @@ void readSerialCommands() {
   while (Serial.available() > 0) {
     String command = Serial.readStringUntil('\n');
     command.trim();
-
     if (command == "CRY_DETECTED") {
       isCryDetected  = true;
       isServoRocking = true;
@@ -257,9 +253,8 @@ void readSerialCommands() {
 
 
 void processMotionDetection() {
-  bool          currentPirState = digitalRead(PIN_PIR_OUT);
-  unsigned long now             = millis();
-
+  bool currentPirState = digitalRead(PIN_PIR_OUT);
+  unsigned long now = millis();
   if (currentPirState == HIGH && previousPirState == LOW && (now - lastMotionTime > 200)) {
     motionTimestamps[motionIndex] = now;
     motionIndex = (motionIndex + 1) % MAX_MOTION_EVENTS;
@@ -277,7 +272,6 @@ void processMotionDetection() {
   }
 
   bool newlyAwake = (validMotionCount >= 4);
-
   if (newlyAwake && !isBabyAwake) {
     isBabyAwake = true;
     Serial.println("BABY_AWAKE");
@@ -290,7 +284,6 @@ void processMotionDetection() {
 
 void processRoomLighting() {
   bool isDark = (digitalRead(PIN_LDR_DO) == LOW); 
-
   if (isDark && (isBabyAwake || isCryDetected)) {
     digitalWrite(PIN_ROOM_LED, HIGH);
   } else {
