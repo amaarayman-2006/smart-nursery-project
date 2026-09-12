@@ -31,6 +31,9 @@
 | Red Plastic Propeller | 80mm, 3-blade | Mounted on F130 motor | 1 |
 | SG90 Micro Servo | 180° rotation | PB1 | 1 |
 | Passive Buzzer | 5V | PA5 (through R10 220Ω resistor) | 1 |
+| Battery | 9V | VS (Motor Driver L293) Power Source | 1 |
+| 5V Regulator | 12V-5V | Outputs 5V DC | 1 |
+
 
 ---
 
