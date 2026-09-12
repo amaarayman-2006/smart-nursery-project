@@ -50,6 +50,7 @@ The system monitors critical environmental and behavioral parameters, processes 
 ```
 smart-nursery-project/
 ├── README.md                                   # Project documentation
+├── BOM.md                                      # Bill Of Materials
 ├── LICENSE                                     # MIT License
 ├── Smart Nursery Guardian Project Report.pdf   # Project Documentation and Report
 │
@@ -87,9 +88,8 @@ smart-nursery-project/
 │   ├── video.mp4                              # Sample video file
 │   └── __pycache__/                           # Python cache directory
 │
-├── MCU code/                                   # Microcontroller Code (Arduino/C++)
-│   ├── MCU_Code.ino                           # Main MCU firmware
-│   └── new.ino                                # Alternative MCU implementation
+├── MCU code/                                  # Microcontroller Code (Arduino/C++)
+│   └── new.ino                                # Main MCU code implementation
 │
 ├── PCB/                                        # Hardware Design (Altium Designer)
 │   ├── Smart Nursery Guardian.PrjPcb          # Altium project file
