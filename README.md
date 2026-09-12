@@ -384,13 +384,13 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👤 Authors
 
-- **Amaar Ayman** - *Project Lead & Developer* - [GitHub Profile](https://github.com/amaarayman-2006)
+- **Team 3**
 
 ## 🙏 Acknowledgments
 
 - **Mind Cloud Training Phase** - Project sponsorship and guidance
 - **Open Source Community** - For excellent libraries (librosa, scikit-learn, etc.)
-- **Contributors** - All team members and collaborators ( Team 3 )
+- **Contributors** - All team members and collaborators
 - **Dataset Providers** - Baby cry audio dataset sources
 
 
