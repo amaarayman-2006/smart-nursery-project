@@ -70,16 +70,14 @@ smart-nursery-project/
 │       └── baby_cry_dataset/         # Labeled baby cry audio files
 │
 ├── MCU code/                          # Microcontroller Code (C++)
-│   └── stm32_firmware.cpp            # STM32 embedded firmware
+│   └── stm32_firmware.cpp            
 │       ├── Sensor reading routines
 │       ├── Serial communication
 │       ├── PWM control for actuators
 │       └── Temperature regulation logic
 │
 ├── PCB/                               # Hardware Design
-│   ├── schematic.pdf                 # Circuit schematic
-│   ├── pcb_layout.pdf                # PCB layout design
-│   └── BOM.txt                       # Bill of materials 
+    └── Altium Designer PCB Project Files 
 ```
 
 ## 🛠 Technology Stack
