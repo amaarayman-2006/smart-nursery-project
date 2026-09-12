@@ -8,11 +8,11 @@
 #define PIN_ROOM_LED     PA4    // Room Illumination LED
 #define PIN_BUZZER       PA5    // Safety & Warning Buzzer
 
-#define PIN_L293D_EN1    PA6    // L293D Enable (PWM Fan Speed)
+#define PIN_L293D_EN1    PA6    // L293D Enable
 #define PIN_L293D_IN1    PA7    // L293D Input 1
 #define PIN_L293D_IN2    PB0    // L293D Input 2
 
-#define PIN_SERVO   PA8    // TIM1_CH1 
+#define PIN_SERVO   PA8         // TIM1 - Servo Signal 
 
 #define PIN_RGB_R        PB4    // RGB Module Red
 #define PIN_RGB_G        PB5    // RGB Module Green
