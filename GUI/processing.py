@@ -12,7 +12,7 @@ import time
 # it records an audio file os length 3 min, removes back-noise, and saves it and its original copy locally
 # note: that only occurs once. In other words, the whole script will need to be re-runned to check for a new 3-min recording ######################
 
-def process_and_save_audio(output_filename="after noise removal.wav", duration=60, sr=16000,log_callback=None):
+def process_and_save_audio(output_filename="after noise removal.wav", duration=10, sr=16000,log_callback=None):
 
     """
     Captures mic input, removes background noise, runs VAD, 
@@ -121,7 +121,7 @@ def is_cry_detected(duration=0.03, sr=16000):
     # If the sound is louder than the threshold, trigger the recording
     return rms > threshold'''
 
-def go(timeout_seconds=100, short_sample_duration= 0.03, long_sample_duration=60, log_callback=None): # Added a timeout parameter (e.g., 60 seconds)
+def go(timeout_seconds=100, short_sample_duration= 0.03, long_sample_duration=10, log_callback=None): # Added a timeout parameter (e.g., 60 seconds)
     start_time = time.time()
     check = True
     def log(message):
