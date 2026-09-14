@@ -90,7 +90,7 @@ def is_cry_detected(duration=0.03, sr=16000):
     sd.wait()  # Hardware blocking pause for audio capture
     raw_audio = np.squeeze(raw_audio)
     pcm_bytes = (raw_audio * 32767).astype(np.int16).tobytes() 
-    vad = wvad.Vad(0)
+    vad = wvad.Vad(1)
     # Validate frame byte size (must be exactly 960 bytes for 30ms at 16kHz)
     if len(pcm_bytes) != int(sr * duration * 2):
         return False
